@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5bmdgku2e001"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fam5m"]
+bg_color = Color(0.6, 1, 0.6, 1)
+
+[node name="HpBar" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_right = 301.0
+offset_bottom = 40.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_fam5m")
+value = 80.0
+show_percentage = false
